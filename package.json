@@ -1,0 +1,12 @@
+{
+  "name": "xenopomp-essentials",
+  "version": "0.0.1-beta.0",
+  "main": "index.js",
+  "author": "XenoPOMP <101574433+XenoPOMP@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^5.2.1",
+    "prettier": "^3.4.2"
+  }
+}
