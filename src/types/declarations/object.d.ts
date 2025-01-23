@@ -1,4 +1,4 @@
-import { AnyObject } from '@/types/aliases';
+import { AnyObject } from '@/types';
 
 type ObjectEntries<Obj extends AnyObject> = Array<[keyof Obj, Obj[keyof Obj]]>;
 
