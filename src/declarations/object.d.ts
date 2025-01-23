@@ -1,5 +1,9 @@
-type ObjectEntries<Obj extends object> = Array<[keyof Obj, Obj[keyof Obj]]>;
+import { AnyObject } from '@/types/aliases';
 
-// declare interface ObjectConstructor {
-//   entries<T>(o: { [s: string]: T; } | ArrayLike<T>): [string, T][];
-// }
+type ObjectEntries<Obj extends AnyObject> = Array<[keyof Obj, Obj[keyof Obj]]>;
+
+declare interface ObjectConstructor {
+  // entries<T>(o: { [s: string]: T } | ArrayLike<T>): [string, T][];
+
+  entries<T>(o: { [s: string]: T } | ArrayLike<T>): ObjectEntries<typeof o>;
+}
