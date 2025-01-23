@@ -4,7 +4,12 @@
   "main": "index.js",
   "author": "XenoPOMP <101574433+XenoPOMP@users.noreply.github.com>",
   "license": "MIT",
-  "dependencies": {},
+  "peerDependencies": {
+    "typescript": ">=5.4"
+  },
+  "dependencies": {
+    "typescript": "^5.7.3"
+  },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^5.2.1",
     "prettier": "^3.4.2"
