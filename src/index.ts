@@ -1,1 +1,1 @@
-const entries = Object.entries({ sus: 12, goma: 22 });
+export * from './types';
