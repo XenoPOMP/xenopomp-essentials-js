@@ -1,4 +1,4 @@
-import { BuildConfig, defineBuildConfig } from 'unbuild';
+import { type BuildConfig, defineBuildConfig } from 'unbuild';
 
 const BASE_CONFIG: BuildConfig = {
   outDir: './dist',

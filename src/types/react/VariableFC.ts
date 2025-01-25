@@ -1,6 +1,6 @@
-import { type ComponentProps, type ElementType, type FC } from 'react';
+import type { ComponentProps, ElementType, FC } from 'react';
 
-import { AsyncFC, WeakOmit } from '../../types';
+import type { AsyncFC, WeakOmit } from '../../types';
 
 /**
  * This type wraps ComponentProps<A> to your FC.
@@ -31,7 +31,7 @@ import { AsyncFC, WeakOmit } from '../../types';
  */
 export type VariableFC<
   A extends ElementType,
-  P = {},
+  P = unknown,
   Ex extends keyof ComponentProps<A> | undefined = undefined,
 > = FC<P & WeakOmit<ComponentProps<A>, Ex>>;
 
@@ -40,6 +40,6 @@ export type VariableFC<
  */
 export type AsyncVariableFC<
   A extends ElementType,
-  P = {},
+  P = unknown,
   Ex extends keyof ComponentProps<A> | undefined = undefined,
 > = AsyncFC<P & WeakOmit<ComponentProps<A>, Ex>>;

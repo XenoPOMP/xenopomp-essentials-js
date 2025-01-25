@@ -1,6 +1,6 @@
-import { FC, ReactNode } from 'react';
+import type { FC, ReactNode } from 'react';
 
-import { ReplaceReturnType } from '../../types';
+import type { ReplaceReturnType } from '../../types';
 
 /**
  * Same as **FC** (or FunctionalComponent), but it returns Promise.
@@ -12,4 +12,4 @@ import { ReplaceReturnType } from '../../types';
  *   return <div></div>;
  * };
  */
-export type AsyncFC<T = {}> = ReplaceReturnType<FC<T>, Promise<ReactNode>>;
+export type AsyncFC<T = unknown> = ReplaceReturnType<FC<T>, Promise<ReactNode>>;

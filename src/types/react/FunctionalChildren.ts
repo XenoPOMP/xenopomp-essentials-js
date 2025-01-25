@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 
 /**
  * This type allows you to make children that can be function.
@@ -8,5 +8,5 @@ import { ReactNode } from 'react';
  * // ReactNode | ((options: string) => ReactNode)
  */
 export type FunctionalChildren<Args extends any[]> =
-	| ReactNode
-	| ((...args: Args) => ReactNode);
+  | ReactNode
+  | ((...args: Args) => ReactNode);

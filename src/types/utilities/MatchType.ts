@@ -21,4 +21,4 @@
  *   ViewStyles
  * >;
  */
-export type MatchType<T extends M, M extends any> = T extends M ? T : never;
+export type MatchType<T extends M, M> = T extends M ? T : never;

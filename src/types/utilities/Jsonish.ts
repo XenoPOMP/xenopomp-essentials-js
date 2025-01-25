@@ -1,4 +1,4 @@
-import { Jsonifiable } from 'type-fest';
+import type { Jsonifiable } from 'type-fest';
 
 /**
  * Return never if type does not match JSON schema.

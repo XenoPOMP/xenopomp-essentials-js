@@ -1,4 +1,4 @@
-import { ReplaceReturnType } from '../../types';
+import type { Fn, ReplaceReturnType } from '../../types';
 
 /**
  * Make any async func synchronous.
@@ -10,7 +10,7 @@ import { ReplaceReturnType } from '../../types';
  * type AsyncFunc = Synchronous<(one: string, two: number) => Promise<void>>; // (one: string, two: number) => void
  * type NotAFunc = Synchronous<'sus'>; // never
  */
-export type Synchronous<Func> = Func extends Function
+export type Synchronous<Func> = Func extends Fn
   ? Func extends (...args: any[]) => Promise<infer Result>
     ? ReplaceReturnType<Func, Result>
     : Func

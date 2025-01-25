@@ -4,6 +4,6 @@
  * @example
  * type ExcludedStore = Modify<IStore, 'appSettings', { appName: 'Simple name' }>; // Key in IStore has been replaced with new type.
  */
-export type Modify<T, K extends keyof T, R extends any> = Omit<T, K> & {
+export type Modify<T, K extends keyof T, R> = Omit<T, K> & {
   [Key in K]: R;
 };
