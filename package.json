@@ -8,8 +8,9 @@
     "build": "unbuild --config .config/build.config.ts"
   },
   "peerDependencies": {
+    "@types/react": ">=19",
     "typescript": ">=5.4",
-    "@types/react": ">=19"
+    "type-fest": ">=4"
   },
   "dependencies": {
     "typescript": "^5.7.3"
@@ -19,6 +20,7 @@
     "@types/react": "^19.0.8",
     "hygen": "^6.2.11",
     "prettier": "^3.4.2",
+    "type-fest": "^4.33.0",
     "unbuild": "^3.3.1"
   }
 }
