@@ -1,6 +1,6 @@
 import { FC, ReactNode } from 'react';
 
-import { ReplaceReturnType } from '@/types/utilities';
+import { ReplaceReturnType } from '../../types';
 
 /**
  * Same as **FC** (or FunctionalComponent), but it returns Promise.

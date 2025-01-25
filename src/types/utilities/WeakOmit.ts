@@ -1,4 +1,4 @@
-import { AnyObject } from '@/types';
+import { AnyObject } from '../../types';
 
 /**
  * Allows to pass undefined as Omit`s generic. Weakly omits type.

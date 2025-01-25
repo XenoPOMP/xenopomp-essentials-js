@@ -1,4 +1,4 @@
-import { ReplaceReturnType } from './ReplaceReturnType';
+import { ReplaceReturnType } from '../../types';
 
 /**
  * Make any async func synchronous.
