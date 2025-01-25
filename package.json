@@ -5,7 +5,7 @@
   "author": "XenoPOMP <101574433+XenoPOMP@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "build:types": "npx unbuild --config .\\.config\\ts\\build.types.config.ts"
+    "build": "unbuild --config .config/build.config.ts"
   },
   "peerDependencies": {
     "typescript": ">=5.4"

@@ -8,19 +8,19 @@
     "skipLibCheck": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
+    // "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
+    // "incremental": true,
+//    "plugins": [
+//      {
+//        "name": "next"
+//      }
+//    ],
     "paths": {
       "@/*": ["./src/*"]
     },
@@ -35,7 +35,8 @@
     "next-env.d.ts",
     ".config/declarations/vitest.d.ts", ".config/declarations/*.d.ts",
     "**/*.ts", "**/*.tsx",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "./src"
   ],
   "exclude": ["node_modules"]
 }
