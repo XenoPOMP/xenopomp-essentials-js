@@ -1,6 +1,6 @@
 {
   "name": "xenopomp-essentials",
-  "version": "0.0.1-beta.0",
+  "version": "0.0.1-beta.1",
   "author": "XenoPOMP <101574433+XenoPOMP@users.noreply.github.com>",
   "license": "MIT",
   "private": false,
@@ -18,7 +18,9 @@
   },
   "main": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "peerDependencies": {
     "@types/react": ">=19",
     "react": ">=19",
