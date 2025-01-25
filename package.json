@@ -9,18 +9,18 @@
   },
   "peerDependencies": {
     "@types/react": ">=19",
-    "typescript": ">=5.4",
-    "type-fest": ">=4"
+    "type-fest": ">=4",
+    "typescript": ">=5.4"
   },
   "dependencies": {
+    "@types/react": "^19.0.8",
+    "type-fest": "^4.33.0",
     "typescript": "^5.7.3"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^5.2.1",
-    "@types/react": "^19.0.8",
     "hygen": "^6.2.11",
     "prettier": "^3.4.2",
-    "type-fest": "^4.33.0",
     "unbuild": "^3.3.1"
   }
 }
