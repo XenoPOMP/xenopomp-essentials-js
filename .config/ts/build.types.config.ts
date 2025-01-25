@@ -1,8 +1,12 @@
 import { defineBuildConfig } from 'unbuild';
 
-export default defineBuildConfig({
-  entries: ['./src/types/index.ts'],
-  outDir: './dist/types',
-  failOnWarn: false,
-  declaration: true,
-});
+import baseConfig from './build.base.config.ts';
+
+export default defineBuildConfig([
+  ...baseConfig,
+  {
+    name: 'Build types submodule',
+    entries: ['./src/types/index.ts'],
+    outDir: './dist/types',
+  },
+]);
