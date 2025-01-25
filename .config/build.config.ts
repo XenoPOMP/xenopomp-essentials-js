@@ -1,15 +1,10 @@
-import { type BuildConfig, defineBuildConfig } from 'unbuild';
-
-const BASE_CONFIG: BuildConfig = {
-  outDir: './dist',
-  failOnWarn: false,
-  declaration: true,
-};
+import { defineBuildConfig } from 'unbuild';
 
 export default defineBuildConfig([
   {
-    ...BASE_CONFIG,
-    name: 'Build types submodule',
-    entries: ['./src/types/index.ts'],
+    entries: ['./src/index.ts'],
+    outDir: './dist',
+    failOnWarn: false,
+    declaration: true,
   },
 ]);

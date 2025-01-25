@@ -1,7 +1,6 @@
 {
   "name": "xenopomp-essentials",
   "version": "0.0.1-beta.0",
-  "main": "index.js",
   "author": "XenoPOMP <101574433+XenoPOMP@users.noreply.github.com>",
   "license": "MIT",
   "private": false,
@@ -12,11 +11,13 @@
     "prepare": "husky"
   },
   "exports": {
-    "./types": {
-      "import": "./dist/types/index.mjs",
-      "types": "./dist/types/index.d.ts"
+    ".": {
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
     }
   },
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "files": ["dist"],
   "peerDependencies": {
     "@types/react": ">=19",
