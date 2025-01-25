@@ -11,6 +11,13 @@
     "lint:code": "eslint -c ./.config/eslint.config.mjs .",
     "prepare": "husky"
   },
+  "exports": {
+    "./types": {
+      "import": "./dist/types/index.mjs",
+      "types": "./dist/types/index.d.ts"
+    }
+  },
+  "files": ["dist"],
   "peerDependencies": {
     "@types/react": ">=19",
     "react": ">=19",

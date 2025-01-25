@@ -1,9 +1,0 @@
-.config
-.github
-.husky
-.idea
-_templates
-node_modules
-src
-
-*error.log
