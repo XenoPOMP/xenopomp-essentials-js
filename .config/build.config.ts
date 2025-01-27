@@ -6,5 +6,10 @@ export default defineBuildConfig([
     outDir: './dist',
     failOnWarn: false,
     declaration: true,
+    rollup: {
+      esbuild: {
+        minify: true,
+      },
+    },
   },
 ]);

@@ -20,3 +20,5 @@ export * from './OneOf';
 export * from './MergeTypes';
 
 export * from './WeakOmit';
+export * from './LenientAutocomplete';
+
