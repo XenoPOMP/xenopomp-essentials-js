@@ -1,0 +1,49 @@
+name: 'CI'
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  # Install Node.js and dependencies
+  ci:
+    strategy:
+      matrix:
+        NODE_VERSION:
+          - '18'
+          - '20'
+          - '22'
+
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: '🧩 Install Node (${{ matrix.NODE_VERSION }})'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '${{ matrix.NODE_VERSION }}'
+
+      - name: '📦 Install dependencies'
+        run: yarn install --frozen-lockfile
+
+      - name: '📕 Linting'
+        run: yarn lint
+
+      # Start to run our inline jobs
+      # Vitest
+      - name: '🧪 Run coverage'
+        run: yarn coverage
+
+      - name: '✍️ Report coverage'
+        if: always() # Also generate the report if tests are failing
+        uses: davelosert/vitest-coverage-report-action@v2
+        with:
+          vite-config-path: .config/vitest.config.ts
