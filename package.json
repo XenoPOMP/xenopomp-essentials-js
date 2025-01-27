@@ -4,10 +4,14 @@
   "author": "XenoPOMP <101574433+XenoPOMP@users.noreply.github.com>",
   "license": "MIT",
   "private": false,
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "build": "unbuild --config .config/build.config.ts",
     "lint": "run-s lint:*",
     "lint:code": "eslint -c ./.config/eslint.config.mjs .",
+    "coverage": "vitest run --coverage -c ./.config/vitest.config.ts",
     "prepare": "husky"
   },
   "exports": {
@@ -35,14 +39,18 @@
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^5.2.1",
+    "@vitest/coverage-istanbul": "^3.0.4",
     "eslint": "^9.19.0",
     "eslint-config-xeno": "^2.0.3-rc.3",
     "husky": "^9.1.7",
     "hygen": "^6.2.11",
+    "jsdom": "^26.0.0",
     "lint-staged": "^15.4.2",
     "npm-run-all": "^4.1.5",
     "pinst": "^3.0.0",
     "prettier": "^3.4.2",
-    "unbuild": "^3.3.1"
+    "unbuild": "^3.3.1",
+    "vite": "^6.0.11",
+    "vitest": "^3.0.4"
   }
 }
