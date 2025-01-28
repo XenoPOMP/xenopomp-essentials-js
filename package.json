@@ -11,6 +11,9 @@
   "engines": {
     "node": "20 || >=22"
   },
+  "publishConfig": {
+    "tag": "beta"
+  },
   "scripts": {
     "build": "run-p build:* && run-p build:packages:*",
     "build:main": "unbuild --config .config/build.config.ts",
