@@ -24,3 +24,4 @@ jobs:
         with:
           token: ${{ secrets.npm_token }}
           access: public
+          package: ./dist/package.json

@@ -1,3 +1,4 @@
+import { copyFile } from 'node:fs/promises';
 import { defineBuildConfig } from 'unbuild';
 
 export default defineBuildConfig([
@@ -15,8 +16,6 @@ export default defineBuildConfig([
 
       // Next.js
       './src/next/index.ts',
-
-      // package.json
     ],
     outDir: './dist',
     failOnWarn: false,
@@ -24,6 +23,11 @@ export default defineBuildConfig([
     rollup: {
       esbuild: {
         minify: true,
+      },
+    },
+    hooks: {
+      'build:done': async () => {
+        await copyFile('./package.json', './dist/package.json');
       },
     },
   },
