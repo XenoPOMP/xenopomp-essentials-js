@@ -4,7 +4,10 @@
   "author": "XenoPOMP <101574433+XenoPOMP@users.noreply.github.com>",
   "license": "MIT",
   "private": false,
-  "repository": "https://github.com/XenoPOMP/xenopomp-essentials-js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/XenoPOMP/xenopomp-essentials-js.git"
+  },
   "engines": {
     "node": "20 || >=22"
   },
