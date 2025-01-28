@@ -1,6 +1,7 @@
 /**
  * This type gets type of array`s item.
  *
+ * @since 0.0.1
  * @example
  * type Super = ArrayType<string[]>; // string
  *

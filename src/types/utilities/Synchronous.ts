@@ -5,6 +5,7 @@ import type { Fn, ReplaceReturnType } from '../../types';
  *
  * Return never, if __Func__ is not a function, actually.
  *
+ * @since 0.0.1
  * @example
  * type NormalFunc = Synchronous<(one: string, two: number) => void>; // (one: string, two: number) => void
  * type AsyncFunc = Synchronous<(one: string, two: number) => Promise<void>>; // (one: string, two: number) => void

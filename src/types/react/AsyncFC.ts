@@ -5,6 +5,7 @@ import type { ReplaceReturnType } from '../../types';
 /**
  * Same as **FC** (or FunctionalComponent), but it returns Promise.
  *
+ * @since 0.0.1
  * @example
  * const Header: AsyncFC<HeaderProps> = async ({}) => {
  *   // Do async stuff here...

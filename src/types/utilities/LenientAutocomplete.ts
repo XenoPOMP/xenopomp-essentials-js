@@ -1,6 +1,7 @@
 /**
  * Makes types don`t merging in unions.
  *
+ * @since 0.0.1
  * @example
  * type Languages = 'TypeScript' | 'JavaScript' | Lenient<string>;
  * //     ^? "TypeScript" | "JavaScript" | string
@@ -11,6 +12,7 @@ export type Lenient<T> = T & {};
  * This type allows any string, but also saves compiler`s autocomplete
  * feature.
  *
+ * @since 0.0.1
  * @example
  * type Languages = 'TypeScript' | 'JavaScript';
  *

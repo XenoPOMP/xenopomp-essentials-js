@@ -3,6 +3,7 @@ import type { AnyObject } from '../../types';
 /**
  * Allows to pass undefined as Omit`s generic. Weakly omits type.
  *
+ * @since 0.0.1
  * @example
  * // Will not omit any keys
  * type Lib = WeakOmit<{ bookCount: number; date: string }, undefined>;

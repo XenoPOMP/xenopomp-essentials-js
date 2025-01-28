@@ -2,6 +2,8 @@
  * Creates pipelines of functions that will be executed only
  * when you will call whole pipeline.
  *
+ * @since 0.0.1
+ *
  * @param fn
  *
  * @example

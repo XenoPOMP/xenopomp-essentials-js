@@ -2,6 +2,7 @@
  * The strict version of Omit. Allows to remove only
  * keys that are presented in T type.
  *
+ * @since 0.0.1
  * @example
  * type Tree = {
  *   height: number;

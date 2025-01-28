@@ -3,6 +3,7 @@ import type { AnyObject } from '../aliases';
 /**
  * Recursevely add some type inside all keys of target type.
  *
+ * @since 0.0.1
  * @example
  * type Sups = DeepInject<{ supa: { sups: number } }, { _ignore: boolean }>;
  * const asp: Sups = { supa: { sups: 1, _ignore: false }, _ignore: false };

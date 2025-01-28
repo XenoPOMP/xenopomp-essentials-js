@@ -3,6 +3,7 @@ import type { FC } from 'react';
 /**
  * Extracts type of props from FC type.
  *
+ * @since 0.0.1
  * @example
  * type Props = FcProps<FC<{ align?: boolean }>>;
  * //   ^? { align?: boolean }

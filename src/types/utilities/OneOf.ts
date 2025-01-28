@@ -2,12 +2,14 @@ import type { MergeTypes } from '../../types';
 
 /**
  * Extracts first type from two generics. Is helper type for {@link OneOf} type.
+ * @since 0.0.1
  */
 export type OnlyFirst<F, S> = F & { [Key in keyof Omit<S, keyof F>]?: never };
 
 /**
  * Chooses only one of types array.
  *
+ * @since 0.0.1
  * @example
  * type Email = {
  *   person: string;

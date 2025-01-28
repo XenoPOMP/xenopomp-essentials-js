@@ -9,6 +9,8 @@ import type { AsyncFC, WeakOmit } from '../../types';
  * * __P__  - wrapping props
  * * __Ex__ - excluded component props (for example, if you do not want to include 'children' prop in component)
  *
+ * @since 0.0.1
+ *
  * @example
  * type VariableComponentPropsWithChildren = ComponentProps<VariableFC<'div'>>;
  * type VariableComponentPropsWithoutChildren = ComponentProps<VariableFC<'div', {}, 'children'>>;
@@ -37,6 +39,7 @@ export type VariableFC<
 
 /**
  * Works similar to {@link VariableFC}, but return type is Promise<ReactNode>;
+ * @since 0.0.1
  */
 export type AsyncVariableFC<
   A extends ElementType,

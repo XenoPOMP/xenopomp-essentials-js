@@ -1,6 +1,8 @@
 /**
  * Checks if type **T** matches type **M**.
  *
+ * @since 0.0.1
+ *
  * @example Not matching
  * type ViewStyles = {
  *   paddingHorizontal: number

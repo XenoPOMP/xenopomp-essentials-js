@@ -16,6 +16,8 @@ export interface VersionData {
 /**
  * Parses version with preid.
  *
+ * @since 0.0.1
+ *
  * @param raw
  *
  * @example

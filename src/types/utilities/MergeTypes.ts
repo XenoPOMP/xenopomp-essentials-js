@@ -2,6 +2,7 @@ import type { EmptyObject } from '../aliases';
 
 /**
  * Merge array of types to one type.
+ * @since 0.0.1
  */
 export type MergeTypes<
   TypesArray extends any[],
