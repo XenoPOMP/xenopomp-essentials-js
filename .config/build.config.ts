@@ -12,7 +12,7 @@ export default defineBuildConfig([
         outDir: './dist/declarations',
       },
       // Next.js
-      './src/next/index.ts',
+      './src/next.ts',
     ],
     outDir: './dist',
     failOnWarn: false,
