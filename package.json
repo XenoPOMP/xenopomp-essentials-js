@@ -8,17 +8,13 @@
     "node": "20 || >=22"
   },
   "scripts": {
-    "build": "unbuild --config .config/build.config.ts",
+    "build": "run-p build:* && run-p build:packages:*",
+    "build:main": "unbuild --config .config/build.config.ts",
+    "build:packages:cli": "echo CLI",
     "lint": "run-s lint:*",
     "lint:code": "eslint -c ./.config/eslint.config.mjs .",
     "coverage": "vitest run --coverage -c ./.config/vitest.config.ts",
     "prepare": "husky"
-  },
-  "exports": {
-    ".": {
-      "import": "./dist/index.mjs",
-      "types": "./dist/index.d.ts"
-    }
   },
   "main": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -38,10 +34,12 @@
     "typescript": "^5.7.3"
   },
   "devDependencies": {
+    "@testing-library/react": "^16.2.0",
     "@trivago/prettier-plugin-sort-imports": "^5.2.1",
     "@vitest/coverage-istanbul": "^3.0.4",
     "eslint": "^9.19.0",
     "eslint-config-xeno": "^2.0.3-rc.3",
+    "esno": "^4.8.0",
     "husky": "^9.1.7",
     "hygen": "^6.2.11",
     "jsdom": "^26.0.0",
