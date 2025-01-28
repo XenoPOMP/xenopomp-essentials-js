@@ -1,8 +1,8 @@
 import { expectAssignable } from 'tsd';
 import { describe, test } from 'vitest';
 
-import { pipe } from '../../src';
-import { assertNotThrowing } from '../assets';
+import { pipe } from '../../../src';
+import { assertNotThrowing } from '../../assets';
 
 describe('Pipe function', () => {
   const testFn = pipe(Date.parse)

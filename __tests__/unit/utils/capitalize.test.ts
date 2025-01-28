@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'vitest';
 
-import { capitalize, uncapitalize } from '../../src';
+import { capitalize, uncapitalize } from '../../../src';
 
 describe('Capitalize/uncapitalize utilities', () => {
   test('Capitalize works', () => {
