@@ -13,7 +13,5 @@ export default defineConfig({
       reporter: ['text', 'json', 'json-summary', 'html'],
       exclude: [...vitestExclusions, ...istanbulExclusions],
     },
-    globals: true,
-    setupFiles: '.config/setup.vitest.ts',
   },
 });
