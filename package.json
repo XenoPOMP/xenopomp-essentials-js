@@ -46,6 +46,7 @@
     "@testing-library/dom": "^10.4.0",
     "@testing-library/react": "^16.2.0",
     "@trivago/prettier-plugin-sort-imports": "^5.2.1",
+    "@vitejs/plugin-react": "^4.3.4",
     "@vitest/coverage-istanbul": "^3.0.4",
     "eslint": "^9.19.0",
     "eslint-config-xeno": "^2.0.3-rc.3",
