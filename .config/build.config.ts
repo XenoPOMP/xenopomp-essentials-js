@@ -5,14 +5,18 @@ export default defineBuildConfig([
     entries: [
       // Main entry
       './src/index.ts',
+
       // Type declarations
       {
         builder: 'mkdist',
         input: './src/declarations',
         outDir: './dist/declarations',
       },
+
       // Next.js
       './src/next/index.ts',
+
+      // package.json
     ],
     outDir: './dist',
     failOnWarn: false,

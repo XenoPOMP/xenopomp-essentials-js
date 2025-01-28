@@ -23,11 +23,8 @@
     "coverage": "vitest run --coverage -c ./.config/vitest.config.ts",
     "prepare": "husky"
   },
-  "main": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
+  "main": "./index.mjs",
+  "types": "./index.d.ts",
   "peerDependencies": {
     "@types/react": ">=19",
     "next": ">=15",
