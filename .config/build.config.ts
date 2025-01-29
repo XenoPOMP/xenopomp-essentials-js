@@ -1,4 +1,5 @@
 import { copyFile } from 'node:fs/promises';
+import path from 'node:path';
 import { defineBuildConfig } from 'unbuild';
 
 export default defineBuildConfig([
@@ -20,6 +21,9 @@ export default defineBuildConfig([
     outDir: './dist',
     failOnWarn: false,
     declaration: true,
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
     rollup: {
       esbuild: {
         minify: true,
