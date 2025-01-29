@@ -1,4 +1,4 @@
-import type { AnyObject } from '../aliases';
+import type { AnyObject } from '@/types';
 
 /**
  * Recursevely add some type inside all keys of target type.

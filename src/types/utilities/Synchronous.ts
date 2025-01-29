@@ -1,4 +1,4 @@
-import type { Fn, ReplaceReturnType } from '../../types';
+import type { Fn, ReplaceReturnType } from '@/types';
 
 /**
  * Make any async func synchronous.

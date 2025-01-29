@@ -1,4 +1,4 @@
-import type { LenientAutocomplete, Nullable } from '../types';
+import type { LenientAutocomplete, Nullable } from '@/types';
 
 export type Preid = 'alpha' | 'beta' | 'rc';
 

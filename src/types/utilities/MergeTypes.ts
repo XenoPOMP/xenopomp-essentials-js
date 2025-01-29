@@ -1,4 +1,4 @@
-import type { EmptyObject } from '../aliases';
+import type { EmptyObject } from '@/types';
 
 /**
  * Merge array of types to one type.

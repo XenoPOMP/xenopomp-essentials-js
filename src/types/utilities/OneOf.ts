@@ -1,4 +1,4 @@
-import type { MergeTypes } from '../../types';
+import type { MergeTypes } from '@/types';
 
 /**
  * Extracts first type from two generics. Is helper type for {@link OneOf} type.

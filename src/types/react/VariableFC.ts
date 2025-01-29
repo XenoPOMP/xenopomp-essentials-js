@@ -1,6 +1,6 @@
 import type { ComponentProps, ElementType, FC } from 'react';
 
-import type { AsyncFC, WeakOmit } from '../../types';
+import type { AsyncFC, WeakOmit } from '@/types';
 
 /**
  * This type wraps ComponentProps<A> to your FC.
