@@ -1,8 +1,9 @@
 import { cleanup } from '@testing-library/react';
 import { afterAll, describe, test } from 'vitest';
 
-import { Metrika } from '../../../src/next';
-import { expectToRender } from '../../assets';
+import { Metrika } from '@/next';
+
+import { expectToRender } from '@test/assets';
 
 describe('Yandex.Metrika script component', () => {
   test('It renders', () => {

@@ -1,4 +1,4 @@
-import type { VersionData } from '../../src';
+import type { VersionData } from '@/utils';
 
 export const testCases: Array<VersionData & { input: string }> = [
   {

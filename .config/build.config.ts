@@ -23,6 +23,7 @@ export default defineBuildConfig([
     declaration: true,
     alias: {
       '@': path.resolve(__dirname, '../', './src'),
+      '@test': path.resolve(__dirname, '../', './__tests__'),
     },
     rollup: {
       esbuild: {

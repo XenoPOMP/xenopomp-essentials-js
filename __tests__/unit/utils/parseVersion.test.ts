@@ -1,8 +1,9 @@
 import { describe, test } from 'vitest';
 
-import { type VersionData, parseVersion } from '../../../src';
-import { assertNotThrowing, expectToDeepEqual } from '../../assets';
-import { testCases } from '../../data/parseVersion.data';
+import { type VersionData, parseVersion } from '@/utils';
+
+import { assertNotThrowing, expectToDeepEqual } from '@test/assets';
+import { testCases } from '@test/data';
 
 describe('parseVersion util', () => {
   const testParseVersion = (raw: string, expected: VersionData) => {
