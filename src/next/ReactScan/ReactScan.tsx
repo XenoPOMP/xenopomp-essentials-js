@@ -1,4 +1,4 @@
-import React, { type FC } from 'react';
+import type { FC } from 'react';
 
 /**
  * Adds react-scan to your Next.js application.
