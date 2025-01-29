@@ -1,6 +1,7 @@
 import { copyFile } from 'node:fs/promises';
-import path from 'node:path';
 import { defineBuildConfig } from 'unbuild';
+
+import { createBuildAlias } from './utils';
 
 export default defineBuildConfig([
   {
@@ -22,7 +23,7 @@ export default defineBuildConfig([
     failOnWarn: false,
     declaration: true,
     alias: {
-      '@': path.resolve(__dirname, '../', './src'),
+      ...createBuildAlias('@', './src'),
     },
     rollup: {
       esbuild: {
