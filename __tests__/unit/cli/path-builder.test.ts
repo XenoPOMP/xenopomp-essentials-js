@@ -31,4 +31,9 @@ describe('PathBuilder class', () => {
     const res = builder.cd('./src').cd('../').build();
     await findPackageJson(res);
   });
+
+  test('file method works', () => {
+    const res = builder.cd('./src').cd('../').file('.prettierrc').build();
+    expect(res.endsWith('.prettierrc')).toBe(true);
+  });
 });
