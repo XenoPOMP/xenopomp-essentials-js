@@ -31,7 +31,8 @@
     "next": ">=15",
     "react": ">=19",
     "type-fest": ">=4",
-    "typescript": ">=5.4"
+    "typescript": ">=5.4",
+    "zod": "*"
   },
   "dependencies": {
     "@types/react": "^19.0.8",
@@ -39,7 +40,8 @@
     "react": "^19.0.0",
     "transliteration": "^2.3.5",
     "type-fest": "^4.33.0",
-    "typescript": "^5.7.3"
+    "typescript": "^5.7.3",
+    "zod": "^3.24.1"
   },
   "devDependencies": {
     "@testing-library/dom": "^10.4.0",
@@ -62,7 +64,6 @@
     "unbuild": "^3.3.1",
     "vite": "^6.0.11",
     "vite-tsconfig-paths": "^5.1.4",
-    "vitest": "^3.0.4",
-    "zod": "^3.24.1"
+    "vitest": "^3.0.4"
   }
 }
