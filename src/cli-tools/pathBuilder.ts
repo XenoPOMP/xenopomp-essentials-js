@@ -14,10 +14,11 @@ import { importMeta } from '@/schemas';
  *
  * const res = builder
  *  .appSource()
- *  .cd('./dist/sources')
+ *  .cd('./dist/src')
+ *  .file('.prettierrc')
  *  .build();
  *
- *  console.log(res); //? C:/Projects/example/node_modules/xenopomp-essentials/dist/sources
+ *  console.log(res); //? C:/Projects/example/node_modules/xenopomp-essentials/dist/src/.prettierrc
  */
 export class PathBuilder {
   private paths: string[] = [];
@@ -34,6 +35,15 @@ export class PathBuilder {
    */
   cd(...paths: string[]) {
     return this.pushPaths(...paths);
+  }
+
+  /**
+   * Pushes filename to paths.
+   * @since 0.0.1
+   * @param fileName
+   */
+  file<T extends `${string}.${string}`>(fileName: T) {
+    return this.pushPaths(`./${fileName}`);
   }
 
   /**
