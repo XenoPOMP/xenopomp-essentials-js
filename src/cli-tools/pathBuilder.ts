@@ -49,9 +49,17 @@ export class PathBuilder {
   /**
    * Pushes path to compiled app directory.
    * Is useful for cli tools that have to access files inside their bundles.
+   *
+   * It probably may take no effect (if import.meta is not available in a scope).
+   * If it is, will push cwd.
+   *
    * @since 0.0.1
    */
   appSource(): PathBuilder {
+    if (!importMeta.dirname) {
+      return this.cwd();
+    }
+
     return this.pushPaths(path.join(path.dirname(importMeta.dirname), '../'));
   }
 
