@@ -15,8 +15,9 @@ export default defineBuildConfig([
         outDir: './dist/declarations',
       },
 
-      // Next.js
+      // Modules that are not to be exported from main module
       './src/next/index.ts',
+      './src/cli-tools/index.ts',
     ],
     outDir: './dist',
     failOnWarn: false,
