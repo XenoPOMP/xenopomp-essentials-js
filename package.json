@@ -1,6 +1,6 @@
 {
   "name": "xenopomp-essentials",
-  "version": "0.0.1-beta.12",
+  "version": "0.1.0-rc.0",
   "author": "XenoPOMP <101574433+XenoPOMP@users.noreply.github.com>",
   "license": "MIT",
   "type": "module",
@@ -13,7 +13,7 @@
     "node": "20 || >=22"
   },
   "publishConfig": {
-    "tag": "beta"
+    "tag": "rc"
   },
   "scripts": {
     "build": "run-p build:* && run-p build:packages:*",
