@@ -3,7 +3,7 @@ to: __tests__/unit/utils/<%= h.changeCase.camelCase(name) %>.test.ts
 ---
 import { describe, test } from 'vitest';
 
-import { transliterate } from '@/utils';
+import { <%= h.changeCase.camelCase(name) %> } from '@/utils';
 
 import { assertNotThrowing } from '@test/assets';
 
