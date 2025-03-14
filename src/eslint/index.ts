@@ -5,7 +5,34 @@ import globals from 'globals';
 import { defaultRiridOptions } from './defaults';
 import type { RiridOptions, UserConfig } from './types';
 
-export default function xenopomp(
+/**
+ * XenoPOMP`s default ESLint config. Uses @ririd/eslint-config
+ * under the hood.
+ *
+ * @param options
+ * @param userConfigs
+ *
+ * @example
+ * import { xenopomp } from 'xenopomp-essentials';
+ *
+ * export default xenopomp(
+ *   // Setup Ririd options
+ *   {
+ *     react: false,
+ *   },
+ *
+ *   // Setup custom user configs
+ *   {
+ *     name: 'Custom config #1',
+ *     rules: {
+ *       'some/rule-name': 'warn',
+ *     },
+ *     // ...
+ *   },
+ *   // ...
+ * );
+ */
+export function xenopomp(
   options?: RiridOptions,
   ...userConfigs: UserConfig[]
 ): ReturnType<typeof ririd> {
