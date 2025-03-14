@@ -32,7 +32,7 @@ import type { RiridOptions, UserConfig } from './types';
  *   // ...
  * );
  */
-export function xenopomp(
+export default function xenopomp(
   options?: RiridOptions,
   ...userConfigs: UserConfig[]
 ): ReturnType<typeof ririd> {
