@@ -20,7 +20,7 @@
     "build:main": "unbuild --config .config/build.config.ts",
     "build:packages:cli": "echo CLI",
     "lint": "run-s lint:*",
-    "lint:code": "eslint -c ./.config/eslint.config.mjs .",
+    "lint:code": "eslint -c ./.config/eslint.config.ts .",
     "coverage": "vitest run --coverage -c ./.config/vitest.config.ts",
     "prepare": "husky"
   },
