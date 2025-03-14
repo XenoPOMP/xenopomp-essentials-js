@@ -36,6 +36,7 @@
     "zod": "*"
   },
   "dependencies": {
+    "@antfu/eslint-config": "^4.10.1",
     "@ririd/eslint-config": "^1.4.0",
     "@types/react": "^19.0.8",
     "deepmerge-ts": "^7.1.5",
@@ -53,7 +54,6 @@
     "@trivago/prettier-plugin-sort-imports": "^5.2.1",
     "@vitejs/plugin-react": "^4.3.4",
     "@vitest/coverage-istanbul": "^3.0.4",
-    "eslint-config-xeno": "^2.0.3-rc.3",
     "esno": "^4.8.0",
     "husky": "^9.1.7",
     "hygen": "^6.2.11",
