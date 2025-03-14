@@ -18,7 +18,12 @@ export default defineBuildConfig([
       // Modules that are not to be exported from main module
       './src/next/index.ts',
       './src/cli-tools/index.ts',
-      './src/eslint/index.ts',
+
+      {
+        builder: 'copy',
+        input: './src/eslint',
+        outDir: './dist/eslint',
+      },
     ],
     outDir: './dist',
     failOnWarn: false,
