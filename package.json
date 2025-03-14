@@ -1,10 +1,13 @@
 {
   "name": "xenopomp-essentials",
-  "version": "0.1.2",
+  "version": "0.1.3-rc.0",
   "author": "XenoPOMP <101574433+XenoPOMP@users.noreply.github.com>",
   "license": "MIT",
   "type": "module",
   "private": false,
+  "publishConfig": {
+    "tag": "rc"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/XenoPOMP/xenopomp-essentials-js.git"
