@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "@types/react": "^19.0.8",
+    "deepmerge-ts": "^7.1.5",
     "next": "^15.1.6",
     "react": "^19.0.0",
     "transliteration": "^2.3.5",
