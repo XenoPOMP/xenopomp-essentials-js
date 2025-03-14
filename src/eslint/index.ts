@@ -16,16 +16,11 @@ export default function xenopomp(
     {
       name: 'Old config',
       languageOptions: {
-        globals: {
-          ...globals.browser,
-          ...globals.jquery,
-          ...globals.node,
-
-          // Rewrite globals anyway
+        globals: deepmerge(globals.browser, globals.jquery, globals.node, {
           document: 'readonly',
           navigator: 'readonly',
           window: 'readonly',
-        },
+        }),
       },
 
       // Ignore patterns
