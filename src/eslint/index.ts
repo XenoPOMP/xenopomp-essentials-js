@@ -3,7 +3,7 @@ import { deepmerge } from 'deepmerge-ts';
 import globals from 'globals';
 
 import { defaultRiridOptions } from './defaults';
-import type { RiridOptions, UserConfig } from './types';
+import type { RiridOptions, RiridReturn, UserConfig } from './types';
 
 /**
  * XenoPOMP`s default ESLint config. Uses @ririd/eslint-config
@@ -35,7 +35,7 @@ import type { RiridOptions, UserConfig } from './types';
 export default function xenopomp(
   options?: RiridOptions,
   ...userConfigs: UserConfig[]
-) {
+): RiridReturn {
   return ririd(
     deepmerge(defaultRiridOptions, options),
 
