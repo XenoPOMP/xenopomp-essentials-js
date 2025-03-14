@@ -1,3 +1,3 @@
-import xenopomp from 'eslint-config-xeno';
+import xenopomp from './src/eslint';
 
 export default xenopomp();
