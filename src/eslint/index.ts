@@ -35,7 +35,7 @@ import type { RiridOptions, UserConfig } from './types';
 export default function xenopomp(
   options?: RiridOptions,
   ...userConfigs: UserConfig[]
-): ReturnType<typeof ririd> {
+) {
   return ririd(
     deepmerge(defaultRiridOptions, options),
 
