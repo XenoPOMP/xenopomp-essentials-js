@@ -36,7 +36,7 @@
     "zod": "*"
   },
   "dependencies": {
-    "@ririd/eslint-config": "^1.4.0",
+    "@ririd/eslint-config": "1.1.0",
     "@types/react": "^19.0.8",
     "deepmerge-ts": "^7.1.5",
     "eslint": "^9.22.0",
