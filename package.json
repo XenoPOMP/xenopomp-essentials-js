@@ -36,7 +36,6 @@
     "zod": "*"
   },
   "dependencies": {
-    "@antfu/eslint-config": "^4.10.1",
     "@ririd/eslint-config": "^1.4.0",
     "@types/react": "^19.0.8",
     "deepmerge-ts": "^7.1.5",
