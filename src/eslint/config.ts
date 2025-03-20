@@ -13,6 +13,26 @@ import type { Configs, CustomConfig, UserConfigItem } from './types';
 
 type Options = OptionsConfig & CustomConfig & TypedFlatConfigItem;
 
+/**
+ * XenoPOMP`s default ESLint config. Uses @antfu/eslint-config under the hood.
+ *
+ * @param options
+ * @param userConfigs
+ *
+ * @example
+ * export default xenopomp(
+ *   // Setup antfu config
+ *   {
+ *     react: true,
+ *     next: false,
+ *   },
+ *   // User configs
+ *   {
+ *     name: 'My custom config',
+ *     rules: { ... }
+ *   },
+ * );
+ */
 export default function xenopomp(
   options?: Options,
   ...userConfigs: UserConfigItem[]
