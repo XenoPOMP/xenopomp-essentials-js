@@ -33,13 +33,17 @@
     "react": ">=19",
     "type-fest": ">=4",
     "typescript": ">=5.4",
-    "zod": "*"
+    "zod": "*",
+    "eslint-config-prettier": ">=10.1.1",
+    "eslint-plugin-prettier": ">=5.2.3"
   },
   "dependencies": {
     "@antfu/eslint-config": "^4.10.1",
     "@types/react": "^19.0.8",
     "deepmerge-ts": "^7.1.5",
     "eslint": "^9.22.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.3",
     "globals": "^16.0.0",
     "next": "^15.1.6",
     "react": "^19.0.0",
