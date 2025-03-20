@@ -8,7 +8,7 @@ import { deepmerge } from 'deepmerge-ts';
 
 import type { Undefinable } from '@/types';
 
-import { all, markdown, next, old, react } from './configs';
+import { all, markdown, next, old, prettier, react } from './configs';
 import type { Configs, CustomConfig, UserConfigItem } from './types';
 
 type Options = OptionsConfig & CustomConfig & TypedFlatConfigItem;
@@ -110,8 +110,9 @@ export default function xenopomp(
 
   if (options.markdown ?? true) configs.push(markdown());
 
-  // Apply previous configs
+  // Apply other configs
   configs.push(old());
+  configs.push(prettier());
 
   return antfu(options, ...configs, ...userConfigs);
 }
