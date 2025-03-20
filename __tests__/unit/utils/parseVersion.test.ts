@@ -1,6 +1,7 @@
 import { describe, test } from 'vitest';
 
-import { type VersionData, parseVersion } from '@/utils';
+import { parseVersion } from '@/utils';
+import type { VersionData } from '@/utils';
 
 import { assertNotThrowing, expectToDeepEqual } from '@test/assets';
 import { testCases } from '@test/data';
