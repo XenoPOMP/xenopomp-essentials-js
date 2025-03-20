@@ -11,7 +11,7 @@ import type { Undefinable } from '@/types';
 import { all, markdown, next, old, prettier, react } from './configs';
 import type { Configs, CustomConfig, UserConfigItem } from './types';
 
-type Options = OptionsConfig & CustomConfig & TypedFlatConfigItem;
+export type Options = OptionsConfig & CustomConfig & TypedFlatConfigItem;
 
 /**
  * XenoPOMP`s default ESLint config. Uses @antfu/eslint-config under the hood.

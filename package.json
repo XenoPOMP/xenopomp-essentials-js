@@ -29,16 +29,17 @@
   "peerDependencies": {
     "@types/react": ">=19",
     "eslint": "^9",
+    "eslint-config-prettier": ">=10.1.1",
+    "eslint-plugin-prettier": ">=5.2.3",
     "next": ">=15",
     "react": ">=19",
     "type-fest": ">=4",
     "typescript": ">=5.4",
-    "zod": "*",
-    "eslint-config-prettier": ">=10.1.1",
-    "eslint-plugin-prettier": ">=5.2.3"
+    "zod": "*"
   },
   "dependencies": {
     "@antfu/eslint-config": "^4.10.1",
+    "@next/eslint-plugin-next": "^15.2.3",
     "@types/react": "^19.0.8",
     "deepmerge-ts": "^7.1.5",
     "eslint": "^9.22.0",
