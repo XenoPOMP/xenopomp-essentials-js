@@ -1,6 +1,6 @@
 import type { FC } from 'react';
 
-import type { AnyObject, EmptyObject } from '@/types';
+import type { EmptyObject } from '@/types';
 
 /**
  * Creates properly type object with jsxDotNotation.
@@ -32,7 +32,7 @@ import type { AnyObject, EmptyObject } from '@/types';
  */
 export function jsxDotNotation<
   Props = EmptyObject,
-  Rest extends Record<string, FC<AnyObject>> = EmptyObject,
+  Rest extends Record<string, FC<any>> = EmptyObject,
 >(comp: FC<Props>, rest: Rest) {
   return Object.assign(comp, rest);
 }
