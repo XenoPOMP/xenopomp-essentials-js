@@ -4,5 +4,6 @@ dist-packages
 dist-docs
 .nmprc
 coverage
+.DS_Store
 
 *error.log
