@@ -1,8 +1,5 @@
 /**
  * Constraints number with min and max values.
- * @param num
- * @param min
- * @param max
  *
  * @example Min value
  * console.log({

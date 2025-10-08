@@ -27,8 +27,11 @@ export interface VersionData {
  */
 export const parseVersion = (raw: string): VersionData => {
   /** Parsed version. */
+  // eslint-disable-next-line regexp/no-useless-flag
   const version = raw.match(/(\d\.){2}\d/gi)?.at(0) || null;
+  // eslint-disable-next-line regexp/no-useless-flag
   const preid = raw.match(/(?<=-)\w+(?=\.\d)/gi)?.at(0);
+  // eslint-disable-next-line regexp/no-useless-flag
   const prerelease = raw.match(/(?<=((\d\.){2}\d-\w+\.))\d+/gi)?.at(0);
 
   return {

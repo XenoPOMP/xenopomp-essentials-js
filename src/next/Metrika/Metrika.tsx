@@ -7,12 +7,6 @@ import type { MetrikaProps } from './Metrika.props';
  * This component allows you to use Yandex.Metrika
  * in your Next.js projects.
  *
- * @param id
- * @param clickMap
- * @param trackLinks
- * @param accurateTrackBounce
- * @constructor
- *
  * @since 0.0.1
  *
  * @example

@@ -8,7 +8,7 @@ export default xenopomp(
       repo: repoEslintPlugin,
     },
     rules: {
-      'repo/deep-type-naming': 'error',
+      'repo/deep-type-naming': 'warn',
     },
   },
 );

@@ -5,9 +5,9 @@ import type { AsyncFC, WeakOmit } from '@/types';
 /**
  * This type wraps ComponentProps<A> to your FC.
  *
- * * __A__  - element type
- * * __P__  - wrapping props
- * * __Ex__ - excluded component props (for example, if you do not want to include 'children' prop in component)
+ * - __A__  - element type
+ * - __P__  - wrapping props
+ * - __Ex__ - excluded component props (for example, if you do not want to include 'children' prop in component)
  *
  * @since 0.0.1
  *
