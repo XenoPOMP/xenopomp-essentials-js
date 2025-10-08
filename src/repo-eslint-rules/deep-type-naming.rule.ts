@@ -14,8 +14,7 @@ export const deepTypeNamingRule = createRule({
       description: 'Naming convention for deep types.',
     },
     messages: {
-      invalidName:
-        'Deep type name "{{name}}" have to follow "TypeDeep" convention.',
+      invalidName: 'Deep type name have to follow "TypeDeep" convention.',
     },
     schema: [],
   },
