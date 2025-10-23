@@ -4,3 +4,4 @@ export * from './markdown';
 export * from './all';
 export * from './old';
 export * from './prettier';
+export * from './deprecation';
