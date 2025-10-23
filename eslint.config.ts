@@ -3,8 +3,8 @@ import repoEslintPlugin from './src/repo-eslint-rules';
 
 export default xenopomp(
   {
-    // deprecation: 'off',
-    // tsconfigPath: './.config/ts/tsconfig.lint.json',
+    deprecation: 'warn',
+    tsconfigPath: './.config/ts/tsconfig.lint.json',
   },
   {
     plugins: {
