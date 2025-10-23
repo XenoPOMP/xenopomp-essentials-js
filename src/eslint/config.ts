@@ -5,13 +5,29 @@ import type {
 } from '@antfu/eslint-config';
 import { antfu } from '@antfu/eslint-config';
 import { deepmerge } from 'deepmerge-ts';
+import type { Linter } from 'eslint';
 
 import type { Undefinable } from '@/types';
 
-import { all, markdown, next, old, prettier, react } from './configs';
+import {
+  all,
+  deprecation,
+  markdown,
+  next,
+  old,
+  prettier,
+  react,
+} from './configs';
 import type { Configs, CustomConfig, UserConfigItem } from './types';
 
-export type Options = OptionsConfig & CustomConfig & TypedFlatConfigItem;
+interface CustomOptions {
+  deprecation?: Linter.RuleEntry;
+  tsconfigPath?: string;
+}
+export type Options = OptionsConfig &
+  CustomConfig &
+  TypedFlatConfigItem &
+  CustomOptions;
 
 /**
  * XenoPOMP`s default ESLint config. Uses @antfu/eslint-config under the hood.
@@ -100,7 +116,10 @@ export default function xenopomp(
       },
       options?.rules,
     ),
-  };
+
+    deprecation: options?.deprecation,
+    tsconfigPath: options?.tsconfigPath,
+  } satisfies Options;
 
   if (options.react ?? true) configs.push(react());
 
@@ -109,6 +128,14 @@ export default function xenopomp(
   if (options.next ?? false) configs.push(next());
 
   if (options.markdown ?? true) configs.push(markdown());
+
+  if (options?.deprecation) {
+    configs.push(
+      deprecation(options?.deprecation ?? 'warn', {
+        tsconfigPath: options?.tsconfigPath,
+      }),
+    );
+  }
 
   // Apply other configs
   configs.push(old());
