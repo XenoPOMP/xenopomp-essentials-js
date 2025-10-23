@@ -17,6 +17,7 @@ export async function deprecation(
       languageOptions: {
         parserOptions: {
           project: options?.tsconfigPath ?? './tsconfig.json',
+          projectSource: true,
         },
       },
       plugins: {

@@ -1,14 +1,10 @@
 {
   "extends": "../../tsconfig.json",
   "include": [
-    "../../next-env.d.ts",
-    "../../.config/declarations/vitest.d.ts", "../../.config/declarations/*.d.ts",
-    "**/*.ts", "**/*.tsx",
-    "../../.next/types/**/*.ts",
-    "../../src",
-    "../../.config/**/*.ts",
-    "../../__tests__",
-    "../../eslint.config.ts",
+    "../../**/*.ts",
+    "../../**/*.tsx",
+    "../../**/.config/**/*.ts",
+    "../../**/__tests__/**/*.ts",
   ],
   "exclude": ["node_modules"]
 }
