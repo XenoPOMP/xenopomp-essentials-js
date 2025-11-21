@@ -1,6 +1,6 @@
 {
   "name": "xenopomp-essentials",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "author": "XenoPOMP <101574433+XenoPOMP@users.noreply.github.com>",
   "license": "MIT",
   "type": "module",
@@ -19,7 +19,8 @@
     "lint": "run-s lint:*",
     "lint:code": "eslint",
     "coverage": "vitest run --coverage -c ./.config/vitest.config.ts",
-    "prepare": "husky"
+    "prepare": "husky",
+    "publish": "yarn install --frozen-lockfile && yarn build"
   },
   "main": "./index.mjs",
   "types": "./index.d.ts",
