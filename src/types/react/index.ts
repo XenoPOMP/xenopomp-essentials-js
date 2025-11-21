@@ -5,3 +5,4 @@ export * from './FunctionalChildren';
 export * from './FCProps';
 export * from './AnyFc';
 export * from './DataAttributes';
+export * from './VariableProps';
