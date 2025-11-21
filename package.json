@@ -13,7 +13,7 @@
     "node": "20 || >=22"
   },
   "scripts": {
-    "build": "run-p build:* && run-p build:packages:*",
+    "build": "run-p build:**",
     "build:main": "unbuild --config .config/build.config.ts",
     "build:packages:cli": "echo CLI",
     "lint": "run-s lint:*",
