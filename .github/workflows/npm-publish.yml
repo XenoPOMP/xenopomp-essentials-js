@@ -35,4 +35,4 @@ jobs:
         run: |
           npm install -g npm@latest
           cd ./dist
-          npm publish
+          npm publish --tag $(npx esno .config/scripts/parse-publish-tag.ts)
