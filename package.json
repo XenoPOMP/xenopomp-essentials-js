@@ -22,8 +22,7 @@
     "lint": "run-s lint:*",
     "lint:code": "eslint",
     "coverage": "vitest run --coverage -c ./.config/vitest.config.ts",
-    "prepare": "husky",
-    "publish": "yarn install --frozen-lockfile && yarn build"
+    "prepare": "husky"
   },
   "main": "./index.mjs",
   "types": "./index.d.ts",
