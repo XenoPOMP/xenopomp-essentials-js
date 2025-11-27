@@ -6,7 +6,7 @@
   "type": "module",
   "private": false,
   "publishConfig": {
-    "tag": "hotfix"
+    "tag": "latest"
   },
   "repository": {
     "type": "git",
