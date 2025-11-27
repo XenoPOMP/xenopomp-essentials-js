@@ -26,4 +26,5 @@ jobs:
       - name: Publish to NPM
         run: |
           npm install -g npm@latest
+          cd ./dist
           npm publish
