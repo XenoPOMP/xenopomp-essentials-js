@@ -1,14 +1,14 @@
-import { describe, test } from 'vitest';
+import { describe, expect, test } from 'vitest';
 
 import { parseVersion } from '@/utils';
 import type { VersionData } from '@/utils';
 
-import { assertNotThrowing, expectToDeepEqual } from '@test/assets';
+import { assertNotThrowing } from '@test/assets';
 import { testCases } from '@test/data';
 
 describe('parseVersion util', () => {
   const testParseVersion = (raw: string, expected: VersionData) => {
-    expectToDeepEqual(parseVersion(raw), expected);
+    expect(parseVersion(raw)).to.deep.equal(expected);
   };
 
   test('It does not throw', () => assertNotThrowing(() => parseVersion('')));
