@@ -3,7 +3,7 @@
 - [x] assertions
 - [x] ~~extensions?~~
 - [x] ~~fixtures?~~
-- [ ] mocks
+- [x] mocks
 - [ ] spies
 - [ ] types
 - [ ] utilities
