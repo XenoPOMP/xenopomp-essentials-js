@@ -1,4 +1,4 @@
-import { blue, blueBright, green } from 'ansi-colors';
+import c from 'ansi-colors';
 import { expect, vi } from 'vitest';
 
 type Caller = (...args: any[]) => void;
@@ -13,8 +13,8 @@ class CustomSpyCaller {
   call(...args: any[]) {
     // eslint-disable-next-line no-console
     console.debug(
-      `${blue(`[${this._executionContext}]`)} ${green(
-        `Custom spy is called with these args: ${blueBright(
+      `${c.blue(`[${this._executionContext}]`)} ${c.green(
+        `Custom spy is called with these args: ${c.blueBright(
           args.map(s => `${s}`).join(', '),
         )}`,
       )}`,
