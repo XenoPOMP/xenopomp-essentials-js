@@ -18,7 +18,10 @@
     "build:packages:cli": "echo CLI",
     "lint": "run-s lint:*",
     "lint:code": "eslint",
-    "coverage": "vitest run --coverage -c ./.config/vitest.config.ts",
+    "vitest": "vitest -c ./.config/vitest.config.ts",
+    "coverage": "yarn vitest run --coverage",
+    "test:unit:watch": "yarn vitest",
+    "test:unit:once": "yarn test:unit:watch --run",
     "prepare": "husky"
   },
   "main": "./index.mjs",
@@ -62,7 +65,7 @@
     "@testing-library/dom": "^10.4.0",
     "@trivago/prettier-plugin-sort-imports": "^5.2.1",
     "@vitejs/plugin-react": "^4.3.4",
-    "@vitest/coverage-istanbul": "^3.2.4",
+    "@vitest/coverage-istanbul": "^4.0.14",
     "eslint-plugin-deprecation": "^3.0.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
@@ -78,7 +81,7 @@
     "react-dom": "^19.2.0",
     "tsd": "^0.31.2",
     "unbuild": "^3.3.1",
-    "vite": "7.1.5",
+    "vite": "7.1.11",
     "vite-tsconfig-paths": "^5.1.4"
   }
 }
