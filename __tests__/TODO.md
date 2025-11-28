@@ -4,7 +4,7 @@
 - [x] ~~extensions?~~
 - [x] ~~fixtures?~~
 - [x] mocks
-- [ ] spies
+- [x] spies
 - [ ] types
 - [ ] utilities
   - [ ] injectMatchMediaMock
