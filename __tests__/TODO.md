@@ -5,8 +5,10 @@
 - [x] ~~fixtures?~~
 - [x] mocks
 - [x] spies
-- [ ] types
-- [ ] utilities
-  - [ ] injectMatchMediaMock
-  - [ ] injectMocks
-  - [ ] stubGlobal
+- [x] types
+  - [x] Stub
+  - [x] DeepTypeReplace
+- [x] utilities
+  - [x] injectMatchMediaMock
+  - [x] injectMocks
+  - [x] stubGlobal
