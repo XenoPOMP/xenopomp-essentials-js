@@ -16,7 +16,7 @@
     "build": "run-p build:**",
     "build:main": "unbuild --config .config/build.config.ts",
     "build:packages:cli": "echo CLI",
-    "lint": "run-s lint:*",
+    "lint": "run-p lint:**",
     "lint:code": "eslint",
     "vitest": "vitest -c ./.config/vitest.config.ts",
     "coverage": "yarn vitest run --coverage",
