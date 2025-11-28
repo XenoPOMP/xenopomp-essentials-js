@@ -1,8 +1,8 @@
 # Add functionality for testing
 
 - [x] assertions
-- [ ] extensions?
-- [ ] fixtures?
+- [x] ~~extensions?~~
+- [x] ~~fixtures?~~
 - [ ] mocks
 - [ ] spies
 - [ ] types
