@@ -5,9 +5,8 @@ name: Node.js Package
 
 on:
   workflow_dispatch:
-  push:
-    tags:
-      - 'v*'
+  release:
+    types: [ created ]
 
 permissions:
   id-token: write  # Required for OIDC
