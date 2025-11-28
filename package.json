@@ -27,7 +27,7 @@
   "main": "./index.mjs",
   "types": "./index.d.ts",
   "peerDependencies": {
-    "@testing-library/react": "^16",
+    "@testing-library/react": ">=16",
     "@types/node": ">=22",
     "@types/react": ">=19",
     "@types/react-dom": ">=19",
