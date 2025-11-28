@@ -4,11 +4,13 @@ on:
     branches:
       - main
       - master
+      - canary
 
   pull_request:
     branches:
       - main
       - master
+      - canary
 
 jobs:
   # Install Node.js and dependencies
