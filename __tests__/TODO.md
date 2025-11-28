@@ -1,6 +1,6 @@
-# Add functionality
+# Add functionality for testing
 
-- [ ] assertions
+- [x] assertions
 - [ ] extensions?
 - [ ] fixtures?
 - [ ] mocks
