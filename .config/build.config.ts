@@ -19,6 +19,12 @@ export default defineBuildConfig([
       './src/next/index.ts',
       './src/cli-tools/index.ts',
       './src/eslint/index.ts',
+
+      // Vitest helper functionality
+      {
+        name: 'vitest/index',
+        input: '__tests__/lib.ts',
+      },
     ],
     outDir: './dist',
     failOnWarn: false,
