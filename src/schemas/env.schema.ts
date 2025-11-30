@@ -6,7 +6,10 @@ dotenv.config({ quiet: true });
 
 // Create type-safe schema
 const envSchema = z.object({
-  DISABLE_MINIFY: z.string().transform(arg => arg === 'true'),
+  DISABLE_MINIFY: z
+    .string()
+    .optional()
+    .transform(arg => arg === 'true'),
 });
 
 // Type-safe parsed `process.env` object.
