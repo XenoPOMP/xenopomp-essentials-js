@@ -42,7 +42,8 @@
     "type-fest": ">=4",
     "typescript": ">=5.4",
     "vitest": "^4",
-    "zod": "*"
+    "zod": "*",
+    "vitest-matchmedia-mock": "^2"
   },
   "dependencies": {
     "@antfu/eslint-config": "^4.10.1",
