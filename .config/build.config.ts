@@ -29,6 +29,8 @@ export default defineBuildConfig([
     outDir: './dist',
     failOnWarn: false,
     declaration: true,
+    clean: true,
+    parallel: true,
     alias: {
       '@': path.resolve(__dirname, '../', './src'),
       '@test': path.resolve(__dirname, '../', './__tests__'),
