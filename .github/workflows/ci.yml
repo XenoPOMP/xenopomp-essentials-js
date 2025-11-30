@@ -44,6 +44,9 @@ jobs:
       - name: '📕 Linting'
         run: yarn lint
 
+      - name: '🧐 Run integrity tests'
+        run: yarn test:integrity
+
       # Start to run our inline jobs
       # Vitest
       - name: '🧪 Run coverage'
