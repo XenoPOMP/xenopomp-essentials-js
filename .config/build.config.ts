@@ -37,7 +37,7 @@ export default defineBuildConfig([
     },
     rollup: {
       esbuild: {
-        minify: true,
+        minify: false,
       },
     },
     hooks: {
