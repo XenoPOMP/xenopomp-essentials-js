@@ -36,6 +36,7 @@ export default defineBuildConfig([
       '@test': path.resolve(__dirname, '../', './__tests__'),
     },
     rollup: {
+      emitCJS: true,
       esbuild: {
         minify: true,
       },

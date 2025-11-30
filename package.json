@@ -4,6 +4,7 @@
   "author": "XenoPOMP <101574433+XenoPOMP@users.noreply.github.com>",
   "license": "MIT",
   "private": false,
+  "type": "commonjs",
   "repository": {
     "type": "git",
     "url": "https://github.com/XenoPOMP/xenopomp-essentials-js.git"
