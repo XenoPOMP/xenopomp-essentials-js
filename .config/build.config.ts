@@ -42,3 +42,12 @@ export default defineBuildConfig([
     },
   },
 ]);
+
+function simpleMinifiedEntry(entry: string): BuildEntry {
+  return {
+    input: entry,
+    esbuild: {
+      minify: false,
+    },
+  };
+}
