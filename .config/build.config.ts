@@ -35,6 +35,11 @@ export default defineBuildConfig([
       '@': path.resolve(__dirname, '../', './src'),
       '@test': path.resolve(__dirname, '../', './__tests__'),
     },
+    rollup: {
+      esbuild: {
+        minify: true,
+      },
+    },
     hooks: {
       'build:done': async () => {
         await copyFile('./package.json', './dist/package.json');
