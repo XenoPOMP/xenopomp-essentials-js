@@ -19,10 +19,12 @@
     "lint": "run-p lint:**",
     "lint:code": "eslint",
     "vitest": "vitest -c ./.config/vitest.config.ts",
+    "vitest:intergrity": "vitest -c ./.config/vitest.config.integrity.ts",
     "coverage": "yarn vitest run --coverage",
     "test:unit:watch": "yarn vitest",
     "test:unit:once": "yarn test:unit:watch --run",
-    "prepare": "husky"
+    "prepare": "husky",
+    "test:integrity": "yarn build ; yarn vitest:intergrity run"
   },
   "main": "./index.mjs",
   "types": "./index.d.ts",
