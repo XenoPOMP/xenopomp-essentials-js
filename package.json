@@ -1,10 +1,9 @@
 {
   "name": "xenopomp-essentials",
-  "version": "0.5.0-canary.6",
+  "version": "0.5.0-canary.7",
   "author": "XenoPOMP <101574433+XenoPOMP@users.noreply.github.com>",
   "license": "MIT",
   "private": false,
-  "type": "commonjs",
   "repository": {
     "type": "git",
     "url": "https://github.com/XenoPOMP/xenopomp-essentials-js.git"
@@ -14,7 +13,6 @@
   },
   "scripts": {
     "build": "run-p build:**",
-    "postbuild": "cd ./dist ; rimraf **/*.mjs",
     "build:main": "unbuild --config .config/build.config.ts",
     "build:packages:cli": "echo CLI",
     "lint": "run-p lint:**",
