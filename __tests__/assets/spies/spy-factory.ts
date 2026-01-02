@@ -1,0 +1,58 @@
+import c from 'ansi-colors';
+import { expect, vi } from 'vitest';
+
+type Caller = (...args: any[]) => void;
+
+class CustomSpyCaller {
+  private readonly _executionContext: string;
+
+  constructor(context: string) {
+    this._executionContext = context;
+  }
+
+  call(...args: any[]) {
+    // eslint-disable-next-line no-console
+    console.debug(
+      `${c.blue(`[${this._executionContext}]`)} ${c.green(
+        `Custom spy is called with these args: ${c.blueBright(
+          args.map(s => `${s}`).join(', '),
+        )}`,
+      )}`,
+    );
+  }
+}
+
+/**
+ * Creates custom spy factory object that is callable.
+ * @param context
+ * @example
+ * const { callSpy, expectToBeCalled, expectToBeNotCalled } =
+ *   spyFactory('spyFactory test');
+ *
+ * // Call spy with some args
+ * const args: any[] = [1, 'some', 'args', 2];
+ * callSpy(...args);
+ *
+ * // Run expectation func
+ * expectToBeCalled(...args);
+ * expectToBeNotCalled(2, 2, 7);
+ */
+export function spyFactory(context: string) {
+  const caller: CustomSpyCaller = new CustomSpyCaller(context);
+  const spy = vi.spyOn(caller, 'call');
+
+  const expectToBeCalled: Caller = (...args) =>
+    expect(spy).toHaveBeenCalledWith(args);
+
+  const expectToBeNotCalled: Caller = (...args) =>
+    expect(spy).not.toHaveBeenCalledWith(args);
+
+  const callSpy: Caller = (...args) => caller.call(args);
+
+  return {
+    expectToBeCalled,
+    expectToBeNotCalled,
+    spy,
+    callSpy,
+  };
+}

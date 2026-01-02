@@ -14,4 +14,7 @@ export default xenopomp(
       'repo/deep-type-naming': 'warn',
     },
   },
+  {
+    ignores: ['**/*.md'],
+  },
 );

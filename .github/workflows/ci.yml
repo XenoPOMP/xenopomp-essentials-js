@@ -4,11 +4,13 @@ on:
     branches:
       - main
       - master
+      - canary
 
   pull_request:
     branches:
       - main
       - master
+      - canary
 
 jobs:
   # Install Node.js and dependencies
@@ -41,6 +43,9 @@ jobs:
 
       - name: '📕 Linting'
         run: yarn lint
+
+      - name: '🧐 Run integrity tests'
+        run: yarn test:integrity
 
       # Start to run our inline jobs
       # Vitest

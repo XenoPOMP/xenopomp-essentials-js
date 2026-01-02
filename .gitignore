@@ -7,3 +7,7 @@ coverage
 .DS_Store
 
 *error.log
+
+# Dotenv files
+.env*
+!.env.example
